@@ -9,6 +9,9 @@ class Option extends Model
 {
     use HasFactory;
 
+    //Mass Assignment
+    protected $fillable = ['name', 'type'];
+
     //Relation many to many
     public function products()
     {

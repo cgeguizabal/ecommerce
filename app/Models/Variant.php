@@ -9,6 +9,9 @@ class Variant extends Model
 {
 
     use HasFactory;
+    
+    //Mass Assignment
+    protected $fillable = ['sku', 'image_path', 'product_id'];
 
     //Relation one to many inverse
     public function product(){

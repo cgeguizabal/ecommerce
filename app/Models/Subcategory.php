@@ -9,6 +9,9 @@ class Subcategory extends Model
 {
     use HasFactory;
 
+    //Mass Assignment
+    protected $fillable = ['name', 'category_id'];
+
     //Relation one to many inverse
     public function category()
     {

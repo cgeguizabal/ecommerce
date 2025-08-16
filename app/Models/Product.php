@@ -9,6 +9,8 @@ class Product extends Model
 {
 
     use HasFactory;
+    //Mass Assignment
+    protected $fillable = ['sku', 'name', 'description', 'image_path', 'price', 'subcategory_id'];
 
     //Relation one to many inverse
     public function subcategory(){

@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Feature extends Model
 {
     use HasFactory;
+    //Mass Assignment
+    protected $fillable = ['value', 'description','option_id'];
 
     //Relation one to many inverse
     public function option()

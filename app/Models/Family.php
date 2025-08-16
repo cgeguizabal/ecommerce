@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Family extends Model
 {
     use HasFactory;
+
+    //Mass Assignment
+    protected $fillable = ['name'];
     
     // Relation one to many
     public function categories()

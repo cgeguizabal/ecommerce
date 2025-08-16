@@ -10,6 +10,9 @@ class Category extends Model
 
     use HasFactory;
 
+    //Mass Assignment
+    protected $fillable = ['name', 'family_id'];
+
     // Relation one to many inverse
     public function family()
     {
